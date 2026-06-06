@@ -40,109 +40,187 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-.profile-intro {
+body.profile-page {
+  background: #f7f8fa;
+}
+
+.profile-page #main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 4.5rem 1.35rem 3rem;
+}
+
+.profile-page .page {
+  float: none;
+  width: 100%;
+  padding: 0;
+}
+
+.profile-page .page__inner-wrap {
+  width: 100%;
+}
+
+.profile-page .page__title {
   margin-bottom: 1.5rem;
+  color: #18202a;
+  font-size: 2.7rem;
+  font-weight: 750;
+  letter-spacing: 0;
+}
+
+.profile-page .page__content {
+  color: #2f3742;
+}
+
+.profile-page .page__content a {
+  text-decoration: none;
+}
+
+.profile-page .page__content a:hover {
+  text-decoration: none;
+}
+
+.profile-page .page__meta {
+  display: none;
+}
+
+.profile-intro {
+  max-width: 760px;
+  margin-bottom: 2.1rem;
+  padding-top: 1.1rem;
+  border-top: 3px solid #b33a3a;
+}
+
+.section-label {
+  margin: 0 0 0.55rem;
+  color: #8a4b22;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .profile-intro__text {
-  max-width: 46rem;
+  max-width: 700px;
   margin: 0;
-  color: #2f3742;
-  font-size: 1.05rem;
-  line-height: 1.75;
+  color: #24303d;
+  font-size: 1.12rem;
+  line-height: 1.78;
 }
 
-.publication-section h2 {
-  margin-bottom: 0.75rem;
-  color: #222831;
-  font-size: 1.2rem;
+.publication-section {
+  max-width: 800px;
+  margin-top: 0;
 }
 
 .publication-card {
-  max-width: 48rem;
-  padding: 1.1rem 1.2rem;
-  border: 1px solid #d8dee6;
-  border-left: 4px solid #b33a3a;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid #d9e0e8;
   border-radius: 8px;
-  background: #fbfcfd;
-  box-shadow: 0 8px 24px rgba(28, 35, 45, 0.06);
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(31, 41, 51, 0.08);
 }
 
 .publication-card__meta {
-  margin-bottom: 0.4rem;
-  color: #8a4b22;
-  font-size: 0.78rem;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  margin-bottom: 0.65rem;
+  padding: 0.25rem 0.58rem;
+  border-radius: 999px;
+  background: #f7ece8;
+  color: #8d2929;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .publication-card__title {
-  margin: 0 0 0.45rem;
-  color: #1f2933;
-  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+  color: #18202a;
+  font-size: 1.22rem;
   line-height: 1.35;
 }
 
 .publication-card__authors,
 .publication-card__summary {
   margin: 0.35rem 0;
-  color: #4b5563;
-  font-size: 0.95rem;
-  line-height: 1.55;
+  color: #4a5561;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.publication-card__authors strong {
+  color: #202936;
 }
 
 .publication-card__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.7rem;
+  gap: 0.45rem;
+  margin-top: 0.85rem;
 }
 
 .publication-card__tags span {
   display: inline-flex;
   align-items: center;
   min-height: 1.7rem;
-  padding: 0.25rem 0.55rem;
+  padding: 0.25rem 0.58rem;
+  border: 1px solid #e0e5eb;
   border-radius: 999px;
-  background: #eef2f5;
-  color: #4a5561;
+  background: #f4f6f8;
+  color: #4b5967;
   font-size: 0.76rem;
-  font-weight: 600;
+  font-weight: 650;
 }
 
 .publication-card__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.9rem;
+  gap: 0.55rem;
+  margin-top: 1rem;
 }
 
 .publication-card__links a {
   display: inline-flex;
   align-items: center;
-  min-height: 2rem;
-  padding: 0.35rem 0.7rem;
+  min-height: 2.05rem;
+  padding: 0.38rem 0.72rem;
   border: 1px solid #cbd5df;
   border-radius: 6px;
   background: #ffffff;
   color: #314761;
-  font-size: 0.82rem;
-  font-weight: 700;
-  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 750;
 }
 
 .publication-card__links a:hover {
   border-color: #b33a3a;
   color: #8d2929;
+  background: #fff8f6;
+}
+
+.profile-page .page__footer {
+  display: none;
 }
 
 @media (max-width: 37.5em) {
+  .profile-page #main {
+    padding-top: 2.6rem;
+  }
+
+  .profile-page .page__title {
+    font-size: 2.15rem;
+  }
+
   .profile-intro__text {
-    font-size: 1rem;
+    font-size: 1.02rem;
   }
 
   .publication-card {
-    padding: 0.95rem;
+    padding: 1rem;
   }
 
   .publication-card__links a {

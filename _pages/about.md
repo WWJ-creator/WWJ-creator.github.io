@@ -1,20 +1,23 @@
 ---
 permalink: /
 title: "Wenjie Wu"
-author_profile: true
+author_profile: false
+hide_masthead: true
+body_class: "profile-page"
 redirect_from:
   - /about/
   - /about.html
 ---
 
-<section class="profile-intro">
+<section class="profile-intro" aria-labelledby="intro-heading">
+  <p class="section-label" id="intro-heading">Intro</p>
   <p class="profile-intro__text">
     I&rsquo;m an undergraduate student at Tsinghua University majoring in Mathematics and Physics + Software Engineering.
   </p>
 </section>
 
 <section class="publication-section" aria-labelledby="publication-heading">
-  <h2 id="publication-heading">Publication</h2>
+  <p class="section-label" id="publication-heading">Publication</p>
 
   <article class="publication-card">
     <div class="publication-card__meta">ICML 2025</div>
