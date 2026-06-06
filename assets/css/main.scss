@@ -39,3 +39,114 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.profile-intro {
+  margin-bottom: 1.5rem;
+}
+
+.profile-intro__text {
+  max-width: 46rem;
+  margin: 0;
+  color: #2f3742;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.publication-section h2 {
+  margin-bottom: 0.75rem;
+  color: #222831;
+  font-size: 1.2rem;
+}
+
+.publication-card {
+  max-width: 48rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid #d8dee6;
+  border-left: 4px solid #b33a3a;
+  border-radius: 8px;
+  background: #fbfcfd;
+  box-shadow: 0 8px 24px rgba(28, 35, 45, 0.06);
+}
+
+.publication-card__meta {
+  margin-bottom: 0.4rem;
+  color: #8a4b22;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.publication-card__title {
+  margin: 0 0 0.45rem;
+  color: #1f2933;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.publication-card__authors,
+.publication-card__summary {
+  margin: 0.35rem 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.publication-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+}
+
+.publication-card__tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.7rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: #eef2f5;
+  color: #4a5561;
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.publication-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.publication-card__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid #cbd5df;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #314761;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.publication-card__links a:hover {
+  border-color: #b33a3a;
+  color: #8d2929;
+}
+
+@media (max-width: 37.5em) {
+  .profile-intro__text {
+    font-size: 1rem;
+  }
+
+  .publication-card {
+    padding: 0.95rem;
+  }
+
+  .publication-card__links a {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}

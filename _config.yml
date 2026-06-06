@@ -12,7 +12,7 @@ title                    : "Wenjie Wu"
 title_separator          : "-"
 name                     : &name "Wenjie Wu"
 description              : &description "I&rsquo;m an undergraduate student at Tsinghua University majoring in Mathematics and Physics + Software Engineering."
-url                      : https://WWJ-creator.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://wwj-creator.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "WWJ-creator/WWJ-creator.github.io"
 
